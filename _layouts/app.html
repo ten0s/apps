@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ "/assets/lib/bootstrap/bootstrap-4.1.3.min.css" | relative_url }}">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    {{ page.content }}
+    <script src="{{ "/assets/lib/jquery/jquery-3.3.1.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/lib/bootstrap/bootstrap-4.1.3.min.js" | relative_url }}"></script>
+    {% for js_file in page.js_files %}
+      <script src="{{ js_file | relative_url }}"></script>
+    {% endfor %}
+  </body>
+</html>
