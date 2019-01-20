@@ -3,6 +3,7 @@ layout: app
 title: Random Gym
 js_files:
 - /assets/js/random-gym.js
+manifest_file: random-gym.manifest
 ---
 <div class="container-fluid">
   <div class="row">
