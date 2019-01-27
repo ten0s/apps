@@ -5,10 +5,10 @@ js_files:
 - /assets/js/random-gym.js
 manifest_file: random-gym.manifest
 ---
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Random Gym</a>
+</nav>
 <div class="container-fluid">
-  <nav class="navbar navbar-nav navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Random Gym</a>
-  </nav>
   <div class="row">
     <div class="col-6">
       <h2>Push-ups:</h2>
