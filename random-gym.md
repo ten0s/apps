@@ -6,6 +6,9 @@ js_files:
 manifest_file: random-gym.manifest
 ---
 <div class="container-fluid">
+  <nav class="navbar navbar-nav navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Random Gym</a>
+  </nav>
   <div class="row">
     <div class="col-6">
       <h2>Push-ups:</h2>
@@ -55,11 +58,11 @@ manifest_file: random-gym.manifest
   <div class="row">
     <div class="col-6">
       <label for="sit-ups-min">Min:</label>
-      <input id="sit-ups-min" type="number" value="40" class="form-control">
+      <input id="sit-ups-min" type="number" value="30" class="form-control">
     </div>
     <div class="col-6">
       <label for="sit-ups-max">Max:</label>
-      <input id="sit-ups-max" type="number" value="80" class="form-control" >
+      <input id="sit-ups-max" type="number" value="60" class="form-control" >
     </div>
   </div>
   <hr>
