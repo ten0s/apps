@@ -38,7 +38,6 @@ function App() {
 
     function setVal() {
         var that = $(this)[0];
-        console.log(that);
         setIntValue(that.id, that.value);
     }
 
