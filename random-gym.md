@@ -20,11 +20,11 @@ manifest_file: random-gym.manifest
   <div class="row">
     <div class="col-6">
       <label for="push-ups-min">Min:</label>
-      <input id="push-ups-min" type="number" value="10" class="form-control">
+      <input id="push-ups-min" type="number" class="form-control">
     </div>
     <div class="col-6">
       <label for="push-ups-max">Max:</label>
-      <input id="push-ups-max" type="number" value="20" class="form-control" >
+      <input id="push-ups-max" type="number" class="form-control" >
     </div>
   </div>
   <hr>
@@ -39,11 +39,11 @@ manifest_file: random-gym.manifest
   <div class="row">
     <div class="col-6">
       <label for="crunches-min">Min:</label>
-      <input id="crunches-min" type="number" value="20" class="form-control">
+      <input id="crunches-min" type="number" class="form-control">
     </div>
     <div class="col-6">
       <label for="crunches-max">Max:</label>
-      <input id="crunches-max" type="number" value="40" class="form-control" >
+      <input id="crunches-max" type="number" class="form-control" >
     </div>
   </div>
   <hr>
@@ -58,11 +58,11 @@ manifest_file: random-gym.manifest
   <div class="row">
     <div class="col-6">
       <label for="sit-ups-min">Min:</label>
-      <input id="sit-ups-min" type="number" value="30" class="form-control">
+      <input id="sit-ups-min" type="number" class="form-control">
     </div>
     <div class="col-6">
       <label for="sit-ups-max">Max:</label>
-      <input id="sit-ups-max" type="number" value="60" class="form-control" >
+      <input id="sit-ups-max" type="number" class="form-control" >
     </div>
   </div>
   <hr>
