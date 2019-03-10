@@ -1,3 +1,11 @@
+/*jslint
+   browser: true,
+   devel: true,
+   nomen: true,
+   vars: true
+*/
+/*global $ */
+
 "use strict";
 
 function App() {
@@ -6,8 +14,8 @@ function App() {
     }
 
     function randomVal(minId, maxId, valId) {
-        var min = parseInt($(minId).val());
-        var max = parseInt($(maxId).val());
+        var min = parseInt($(minId).val(), 10);
+        var max = parseInt($(maxId).val(), 10);
         var pushUps = choose(min, max);
         $(valId).text(pushUps);
     }
@@ -30,10 +38,16 @@ function App() {
         randomSitUps();
     }
 
-    function initVals() {
-        initPushUps();
-        initCrunches();
-        initSitUps();
+    function getIntValue(name, init) {
+        var value = localStorage.getItem(name);
+        if (value) {
+            return parseInt(value, 10);
+        }
+        return init;
+    }
+
+    function setIntValue(name, value) {
+        localStorage.setItem(name, value);
     }
 
     function setVal() {
@@ -62,24 +76,10 @@ function App() {
         $("#sit-ups-max").change(setVal);
     }
 
-    function setPushUpsMin(value) {
-        setIntValue("push-ups-min", value);
-    }
-
-    function setPushUpsMax(value) {
-        setIntValue("push-ups-max", value);
-    }
-
-    function getIntValue(name, init) {
-        var value = localStorage.getItem(name);
-        if (value) {
-            return parseInt(value, 10);
-        }
-        return init;
-    }
-
-    function setIntValue(name, value) {
-        localStorage.setItem(name, value);
+    function initVals() {
+        initPushUps();
+        initCrunches();
+        initSitUps();
     }
 
     function start() {
