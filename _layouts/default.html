@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="{{ page.manifest_file | relative_url }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="mobile-web-app-capable" content="yes">
@@ -11,8 +11,5 @@
     {{ content }}
     <script src="{{ "/assets/lib/jquery/jquery-3.3.1.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/lib/bootstrap/bootstrap-4.1.3.min.js" | relative_url }}"></script>
-    {% for js_file in page.js_files %}
-      <script src="{{ js_file | relative_url }}"></script>
-    {% endfor %}
   </body>
 </html>
