@@ -1,5 +1,5 @@
 ---
-title: Recipes
+title: Рецепты
 layout: default
 ---
 <ul class="list-group">
