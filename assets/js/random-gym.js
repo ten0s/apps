@@ -56,23 +56,23 @@ function App() {
     }
 
     function initPushUps() {
-        $("#push-ups-min").val(getIntValue("push-ups-min", 10));
+        $("#push-ups-min").val(getIntValue("push-ups-min", 20));
         $("#push-ups-min").change(setVal);
-        $("#push-ups-max").val(getIntValue("push-ups-max", 20));
+        $("#push-ups-max").val(getIntValue("push-ups-max", 30));
         $("#push-ups-max").change(setVal);
     }
 
     function initCrunches() {
-        $("#crunches-min").val(getIntValue("crunches-min", 20));
+        $("#crunches-min").val(getIntValue("crunches-min", 30));
         $("#crunches-min").change(setVal);
-        $("#crunches-max").val(getIntValue("crunches-max", 40));
+        $("#crunches-max").val(getIntValue("crunches-max", 60));
         $("#crunches-max").change(setVal);
     }
 
     function initSitUps() {
-        $("#sit-ups-min").val(getIntValue("sit-ups-min", 30));
+        $("#sit-ups-min").val(getIntValue("sit-ups-min", 60));
         $("#sit-ups-min").change(setVal);
-        $("#sit-ups-max").val(getIntValue("sit-ups-max", 60));
+        $("#sit-ups-max").val(getIntValue("sit-ups-max", 90));
         $("#sit-ups-max").change(setVal);
     }
 
