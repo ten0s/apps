@@ -7,9 +7,9 @@ layout: default
     <a href="{{ "random-gym.html" | relative_url }}">Random Gym</a>
   </li>
   <li class="list-group-item">
-    <a href="{{ "recipes.html" | relative_url }}">Recipes</a>
+    <a href="//github.com/ten0s/recipes.html">Recipes</a>
   </li>
   <li class="list-group-item">
-    <a href="{{ "recipes-old.html" | relative_url }}">Recipes (old)</a>
+    <a href="{{ "recipes-old.html" | relative_url }}">Recipes (deprecated)</a>
   </li>
 </ul>
