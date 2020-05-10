@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/AutoSave</li>
+
 <li>$:/config/DefaultSidebarTab</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
@@ -233,6 +235,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20200510130608854" modified="20200510130608854" title="$:/config/AutoSave">
+<pre>no</pre>
+</div>
 <div created="20200510124701201" modified="20200510124701201" title="$:/config/DefaultSidebarTab">
 <pre>Contents</pre>
 </div>
@@ -9612,9 +9617,9 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20200510124417761" modified="20200510124417761" title="$:/DefaultTiddlers">
+<div created="20200510124417761" modified="20200510130719898" title="$:/DefaultTiddlers">
 <pre>
-</pre>
+Contents</pre>
 </div>
 <div created="20200510130203074" modified="20200510130205452" title="$:/GitHub/Filename">
 <pre>recipes.html</pre>
@@ -9656,11 +9661,11 @@ Error message and password prompt
 <div created="20200510124445980" modified="20200510124445980" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20200510124436384" modified="20200510130146572" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20200510124436384" modified="20200510130710061" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20200510130147891" modified="20200510130147891" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20200510130147891" modified="20200510130607818" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
 <div created="20200510124427466" modified="20200510124630397" title="$:/state/tab/sidebar--595412856">
 <pre>Contents</pre>
@@ -9671,7 +9676,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200510124434378" list="C [[Стейки форели/семги в духовке]] [[Режимы работы духовки]] Contents" modified="20200510130144065" title="$:/StoryList">
+<div created="20200510124434378" list="" modified="20200510130708202" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9885,11 +9890,11 @@ Error message and password prompt
 <div title="TurboGrilling.png" type="image/png">
 <pre>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</pre>
 </div>
-<div created="20200510124854792" modified="20200510130130320" tags="Contents" title="Режимы работы духовки">
+<div created="20200510124854792" modified="20200510130650379" tags="Contents" title="Режимы работы духовки">
 <pre>| !Иконка | !Режим | !Mode | !Применение |
 | {{Light.png}} | Освещение | Light | Включение лампы освещения без использования каких-либо режимов приготовления. |
-| {{TrueFanCooking.png}} | Горячий воздух | True Fan Cooking | Одновременное выпекание на трех уровнях духового шкафа и подсушивание продуктов. Установите температуру на 20°C – 40°C ниже, чем для режима &quot;Верхний + нижний нагрев&quot;. |
-| {{PizzaSetting.png}} | Пицца | Pizza Setting | Выпекание на 1 уровне духового шкафа, когда требуется более интенсивное подрумянивание и хрустящая нижняя корочка. Установите температуру на 20°C – 40°C ниже, чем для режима &quot;Верхний + нижний нагрев&quot;. |
+| {{TrueFanCooking.png}} | Горячий воздух | True Fan Cooking | Одновременное выпекание на трех уровнях духового шкафа и подсушивание продуктов. Установите температуру на 20{{C}} - 40{{C}} ниже, чем для режима &quot;Верхний + нижний нагрев&quot;. |
+| {{PizzaSetting.png}} | Пицца | Pizza Setting | Выпекание на 1 уровне духового шкафа, когда требуется более интенсивное подрумянивание и хрустящая нижняя корочка. Установите температуру на 20{{C}} - 40{{C}} ниже, чем для режима &quot;Верхний + нижний нагрев&quot;. |
 | {{ConventionalCooking.png}} | Верхний + нижний нагрев | Conventional Cooking | Выпекание и жарка на одном уровне духового шкафа. |
 | {{BottomHeat.png}} | Нижний нагрев | Bottom Heat | Выпекание тортов с хрустящей нижней корочкой и консервирование продуктов. |
 | {{Defrost.png}} | Размораживание | Defrost | Размораживание замороженных продуктов. |
@@ -9898,9 +9903,9 @@ Error message and password prompt
 | {{TurboGrilling.png}} | Турбо гриль | Turbo Grilling | Жарка крупных кусков мяса или птицы на одном уровне, а также запекание до румяной корочки и обжаривание. |
 </pre>
 </div>
-<div created="20200510125800810" modified="20200510130028116" tags="Recipes" title="Стейки форели/семги в духовке">
+<div created="20200510125800810" modified="20200510130557521" tags="Recipes" title="Стейки форели/семги в духовке">
 <pre>Стейки форели или семги обмазать солью и приправами. Противень
-смазать подсолнечным маслом. Запекать 30 мин при 180С на режиме
+смазать подсолнечным маслом. Запекать 30 мин при 180{{C}} на режиме
 {{TurboGrilling.png}}
 </pre>
 </div>
