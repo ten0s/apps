@@ -9,4 +9,7 @@ layout: default
   <li class="list-group-item">
     <a href="{{ "recipes.html" | relative_url }}">Recipes</a>
   </li>
+  <li class="list-group-item">
+    <a href="{{ "recipes-old.html" | relative_url }}">Recipes (old)</a>
+  </li>
 </ul>
